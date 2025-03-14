@@ -12,7 +12,7 @@ struct NewsAppApp: App {
     var body: some Scene {
         WindowGroup {
             HeadlinesView()
-                .environment(\.api, APIClientKey.defaultValue)
+                .environment(\.apiClient, APIClientKey.defaultValue)
         }
     }
 }

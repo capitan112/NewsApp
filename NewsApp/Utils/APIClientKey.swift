@@ -13,7 +13,7 @@ struct APIClientKey: EnvironmentKey {
 }
 
 extension EnvironmentValues {
-    var api: APIClientProtocol {
+    var apiClient: APIClientProtocol {
         get { self[APIClientKey.self] }
         set { self[APIClientKey.self] = newValue }
     }

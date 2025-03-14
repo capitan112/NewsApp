@@ -16,7 +16,7 @@ enum LoadingState<T> {
 }
 
 struct HeadlinesView: View {
-    @Environment(\.api) private var api
+    @Environment(\.apiClient) private var api
     @State var loadingState: LoadingState<[HeadlineDto]> = .initial
 
     var body: some View {
@@ -67,5 +67,5 @@ struct HeadlinesView: View {
 
 #Preview {
     HeadlinesView()
-        .environment(\.api, APIClientKey.defaultValue)
+        .environment(\.apiClient, APIClientKey.defaultValue)
 }

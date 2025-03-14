@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InitialView: View {
-    @Environment(\.api) private var api
+    @Environment(\.apiClient) private var api
     let retryAction: () async -> Void
 
     var body: some View {

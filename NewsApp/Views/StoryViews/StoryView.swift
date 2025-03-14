@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct StoryView: View {
-    @Environment(\.api) private var api
+    @Environment(\.apiClient) private var api
     @State var loadingState: LoadingState<StoryDetailsDto> = .initial
     let storyID: StoryIdentifier
 
